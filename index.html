@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Example Of Lego landiPage</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        height: 100vh;
+        margin: 0;
+        overflow: hidden;
+      }
+      .page {
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+      }
+      .container {
+        position: absolute;
+        z-index: 1;
+      }
+      .loader {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+        position: absolute;
+        z-index: 3;
+        animation: loader 2s linear forwards;
+      }
+      @keyframes loader {
+        0% {
+          opacity: 1;
+          visibility: visible;
+        }
+        95% {
+          opacity: 1;
+          visibility: visible;
+        }
+        100% {
+          opacity: 0;
+          visibility: hidden;
+        }
+      }
+      .loader div {
+        background-color: #0cbaba;
+        background-image: linear-gradient(315deg, #0cbaba 0%, #380036 74%);
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin: 15px;
+        transform: scale(0);
+        animation: scaling 2s ease-in-out infinite;
+      }
+      .loader div:nth-child(1) {
+        animation-delay: 0s;
+      }
+      .loader div:nth-child(2) {
+        animation-delay: 0.1s;
+      }
+      .loader div:nth-child(3) {
+        animation-delay: 0.2s;
+      }
+
+      @keyframes scaling {
+        0% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.5);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+      <section class="container">
+        <nav class="navbar">
+          <div class="navbar_content">
+            <img src="" alt="" />
+            <ul>
+              <li><a href="">EXCLUSIVOS</a></li>
+              <li><a href="">NUEVOS</a></li>
+              <li><a href="">GIFT CARDS</a></li>
+              <li><a href="">FIND A STORE</a></li>
+            </ul>
+          </div>
+        </nav>
+        <section class="main-content">
+          <p>Diseña tu</p>
+          <h1>SUPER HEROE!</h1>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam
+            est, at incidunt non ex minima aliquid deleniti iste nostrum
+            obcaecati, voluptatem eum nobis fugit atque officiis eaque dolore.
+            Eveniet, porro.
+          </p>
+        </section>
+        <section class="side-content">
+          <p>SUPERMAN</p>
+          <img src="" alt="" />
+          <div></div>
+        </section>
+        <section>
+          <div>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <img src="" alt="" />
+          </div>
+          <div>
+            <img src="" alt="" />
+          </div>
+        </section>
+      </section>
+      <section class="loader">
+        <div></div>
+        <div></div>
+        <div></div>
+      </section>
+      <section>
+        <!-- modal -->
+      </section>
+    </div>
+  </body>
+</html>
